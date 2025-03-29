@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0; /* Light Grey */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Offset for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Right Side: Listings + Profile */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Listings Link */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #28a745;
+}
+
+/* Profile Icon (Circular Frame) */
+.profile-icon {
+    width: 50px;  /* Match the image size */
+    height: 50px; /* Match the image size */
+    background: white;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image stays within the circular frame */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Profile Image */
+.profile-icon img {
+    width: 100%; /* Makes sure the image fills the container */
+    height: 100%; /* Ensures proportional scaling */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 50%; /* Ensures the image itself remains circular */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    background: white;
+    padding: 0px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: -50vw;
+    margin-right: -50vw;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero-text {
+    padding: 20px;
+}
+
+.hero-text h2 {
+    color: #28a745;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #218838;
+}
+
+/* Quick Links */
+.quick-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.action-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 5px;
+}
+
+.action-card a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-card a:hover {
+    text-decoration: underline;
+}
+
+/* Job Listings */
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.job-card {
+    background: white;
+    padding: 15px;
+    width: 45%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    color: #28a745;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Profile Section */
+.profile-info {
+    text-align: center;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 40px;
+    background: #e8e8e8;
+}
+
+.testimonials h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #28a745;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #28a745;
+    color: white;
+    margin-top: 20px;
+}
